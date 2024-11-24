@@ -390,7 +390,7 @@ header input[type="text"]:focus {
         const movie = movies.find((m) => m.id === movieId);
 
         if (movie.premium && !user.isPremium) {
-          alert("This movie is for premium users only. Please upgrade to access it.");
+          alert("BUY PREMIUM TO ACSES IT");
         } else {
           window.location.href = movie.url;
         }
