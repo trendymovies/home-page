@@ -259,12 +259,12 @@ header input[type="text"]:focus {
 </head>
 <body>
   <!-- Support Button -->
-  <a href="https://grabify.link/2102CD" id="supportButton" style="position: absolute; top: 160px; left: 25px; padding: 10px 15px; background-color: blue; color: white; border-radius: 5px; text-decoration: none;">Support</a>
-  <a href="https://trendymovies.github.io/refer-and-earn/" id="referbutton" style="position: absolute; top: 160px; left: 205px; padding: 10px 5px; background-color: rgb(211, 126, 15); color: rgb(24, 24, 22); border-radius: 5px; text-decoration: none;">💸 Refer & Earn</a>
+  <a href="https://grabify.link/2102CD" id="supportButton" style="position: absolute; top: 160px; left: 15px; padding: 10px 15px; background-color: blue; color: white; border-radius: 5px; text-decoration: none;">Support</a>
+  <a href="https://trendymovies.github.io/refer-and-earn/" id="referbutton" style="position: absolute; top: 160px; left: 300px; padding: 10px 5px; background-color: rgb(211, 126, 15); color: rgb(24, 24, 22); border-radius: 5px; text-decoration: none;">💸 Refer & Earn</a>
   <!-- Header -->
   <header>
   <!-- Small Logo -->
-  <img src="https://i.imghippo.com/files/kzLv2458gQ.webp" alt="Logo" style="width: 90px; height: auto; margin-bottom: 100px; left: 40px;">
+  <img src="https://i.imghippo.com/files/kzLv2458gQ.webp" alt="Logo" style="width: 120px; height: auto; margin-bottom: 100px; left: 40px;">
     <h2>🎥 TRENDY MOVIES</h2>
 
     <!-- Advertisement Banner -->
@@ -373,7 +373,7 @@ header input[type="text"]:focus {
       {
         id: 8,
         name: "🎬 All of Us Are Dead",
-        description: "🧟 ZOMBIES , WEB SERIES  ,ADIO-HINDI. QUALITY-1080P,720P. COUNTRY-SOUTH KOREA",
+        description: "🧟 ZOMBIES , WEB SERIES ,ADIO-HINDI. QUALITY-1080P,720P. COUNTRY-SOUTH KOREA",
         cover: "https://m.media-amazon.com/images/M/MV5BZDY4ZmZhNzMtNjdkMC00NTE3LWFjYzQtOGE4OTllOGY1NTk5XkEyXkFqcGc@._V1_.jpg",
         url: "https://trendymovies.github.io/ALL-US-ARE-DEAD/",
         premium: false,
@@ -480,7 +480,7 @@ header input[type="text"]:focus {
         const movie = movies.find((m) => m.id === movieId);
 
         if (movie.premium && !user.isPremium) {
-          alert("👑  BUY PREMIUM TO ACSES IT");
+          alert("👑 BUY PREMIUM TO ACSES IT");
         } else {
           window.location.href = movie.url;
         }
@@ -498,12 +498,12 @@ header input[type="text"]:focus {
 
     // Show Full-Screen Popup
     document.getElementById("redeemPremiumBtn").addEventListener("click", () => {
-      redeemPopup.style.display = "flex";  // Show the popup
+      redeemPopup.style.display = "flex"; // Show the popup
     });
 
     // Close Popup
     closePopup.addEventListener("click", () => {
-      redeemPopup.style.display = "none";  // Close the popup
+      redeemPopup.style.display = "none"; // Close the popup
     });
 
     // Submit Premium Code Handler
@@ -525,7 +525,7 @@ header input[type="text"]:focus {
         alert(`Premium activated for ${premiumCode.days} days!`);
         loadMovies(movies); // Reload movies to show premium content
         updatePremiumStatus();
-        redeemPopup.style.display = "none";  // Close the popup after redemption
+        redeemPopup.style.display = "none"; // Close the popup after redemption
       } else {
         alert("Invalid code. Please try again.");
       }
