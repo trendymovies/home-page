@@ -202,19 +202,60 @@ header input[type="text"]:focus {
 #redeemPopup h2 {
   font-size: 1.6rem;
   margin-bottom: 20px;
-  color: #fff;
+  color: #f0e6e6;
 }
 
 #redeemPopup input {
   width: 100%;
   padding: 15px;
   font-size: 1.1rem;
-  border: 2px solid #444;
+  border: 2px solid #000000;
   border-radius: 30px;
-  background-color: #333;
+  background-color: #0a0a0a;
   color: #fff;
   margin-bottom: 20px;
 }
+/* Ensure the body takes full width and height */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  /* Style for both buttons */
+  #supportButton,
+  #referbutton {
+    position: absolute;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+
+  /* Position the buttons below the image */
+  #supportButton {
+    top: 180px; /* Adjusted to be below the image */
+    left: 10px; /* Align to the left edge */
+    background-color: blue;
+    color: white;
+  }
+
+  #referbutton {
+    top: 180px; /* Adjusted to be below the image */
+    right: 10px; /* Align to the right edge */
+    background-color: rgb(211, 126, 15);
+    color: rgb(24, 24, 22);
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 767px) {
+    #supportButton,
+    #referbutton {
+      padding: 8px 12px; /* Adjust padding for smaller buttons */
+    }
+  }
 
 #redeemPopup button {
   padding: 10px 20px; /* Smaller button */
@@ -259,8 +300,8 @@ header input[type="text"]:focus {
 </head>
 <body>
   <!-- Support Button -->
- <a href="https://grabify.link/2102CD" id="supportButton" style="position: absolute; top: 160px; left: 65px; padding: 10px 15px; background-color: blue; color: white; border-radius: 5px; text-decoration: none;">‎‎ ‎🎧 Support‎‎‎ ‎ ‎‎   </a>
-  <a href="https://trendymovies.github.io/refer-and-earn/" id="referbutton" style="position: absolute; top: 160px; left: 252px; padding: 10px 10px; background-color: rgb(211, 126, 15); color: rgb(24, 24, 22); border-radius: 5px; text-decoration: none;">💸 Refer & Earn</a>
+  <a href="https://grabify.link/2102CD" id="supportButton">‎ ‎ 🎧 Support‎ ‎‎  </a>
+  <a href="https://trendymovies.github.io/refer-and-earn/" id="referbutton">💸 Refer & Earn</a>
   <!-- Header -->
   <header>
   <!-- Small Logo -->
